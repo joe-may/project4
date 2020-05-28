@@ -4,7 +4,7 @@ const usersCtrl = require('../controllers/users');
 
 /*---------- Public Routes ----------*/
 router.post('/signup', usersCtrl.signup);
-
+router.post('/login', usersCtrl.login);
 
 ////////////////////// AUTH
 
@@ -18,13 +18,13 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
-  const username = req.body.username;
+  // const username = req.body.username;
 
-  const newUser = new User({username});
+  // const newUser = new User({username});
 
-  newUser.save()
-    .then(() => res.json('User added!'))
-    .catch(err => res.status(400).json('Error: ' + err));
+  // newUser.save()
+  //   .then(() => res.json('User added!'))
+  //   .catch(err => res.status(400).json('Error: ' + err));
 });
 
 module.exports = router;

@@ -1,36 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class Navbar extends Component {
-
-  render() {
-    return (
-      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand">ExcerTracker</Link>
-        <div className="collpase navbar-collapse">
-        <ul className="navbar-nav mr-auto">
-          <li className="navbar-item">
-          <Link to="/" className="nav-link">Exercises</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/create" className="nav-link">Create Exercise Log</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/user" className="nav-link">Create User</Link>
-          </li>
-          
-          <div>
-          <li>
-              <Link to='/login' className='NavBar-link'>LOG IN</Link>
-              </li>
-                &nbsp;&nbsp;|&nbsp;&nbsp;
-              <li>
-              <Link to='/signup' className='NavBar-link'>SIGN UP</Link>
-          </li>
-          </div>
-        </ul>
+const NavBar = (props) => {
+    const nav = props.user ?
+        <div>
+            <Link to="/" className="home">Home</Link>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to='' onClick={props.handleLogout}>Log out</Link>
+            &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+            <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
+            <span>logged in as: {props.user.name}</span>
         </div>
-      </nav>
-    );
-  }
-}
+        :
+        <div className="nav">
+            <Link to="/create" className="nav-link">Create Exercise Log</Link>
+            <Link to="/" className="nav-link">Exercises</Link>
+            <Link to='/login'>Log in</Link>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <Link to='/signup'>Sign up</Link>
+            <Link to='' onClick={props.handleLogout}>Log out</Link>
+            
+        </div>
+    return (
+        <div className='NavBar'>
+            {nav}
+        </div>
+    )}
+export default NavBar;
