@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import tokenService from '../utils/tokenService';
 
 export default class CreateExercise extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ export default class CreateExercise extends Component {
       description: '',
       duration: 0,
       date: new Date(),
-      users: []
+      user: []
     }
   }
 
@@ -73,8 +74,12 @@ export default class CreateExercise extends Component {
     }
 
     console.log(exercise);
-
-    axios.post('http://localhost:5000/exercises/add', exercise)
+    const config = {
+      headers: {
+        'Authorization': 'Bearer ' + tokenService.getToken()
+      }
+    }
+    axios.post('http://localhost:5000/exercises/', exercise, config)
       .then(res => console.log(res.data));
 
     window.location = '/';

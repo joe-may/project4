@@ -1,5 +1,6 @@
 const router = require('express').Router();
 let Exercise = require('../models/exercise.model');
+const exerciseCtrl = require("../controllers/exercise")
 
 router.route('/').get((req, res) => {
   Exercise.find()
@@ -12,12 +13,14 @@ router.route('/add').post((req, res) => {
   const description = req.body.description;
   const duration = Number(req.body.duration);
   const date = Date.parse(req.body.date);
+  // const user = 
 
   const newExercise = new Exercise({
     businessname,
     description,
     duration,
     date,
+    
   });
 
   newExercise.save()
@@ -51,5 +54,7 @@ router.route('/update/:id').post((req, res) => {
     })
     .catch(err => res.status(400).json('Error: ' + err));
 });
+router.use(require("../config/auth"))
+router.post("/", exerciseCtrl.create)
 
 module.exports = router;
