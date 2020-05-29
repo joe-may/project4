@@ -10,6 +10,8 @@ import CreateUser from "./components/create-user.component";
 import userService from './utils/userService';
 import SignupPage from './pages/SignupPage/SignupPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+// import ShowPage from './pages/ShowPage/ShowPage';
+
 import tokenService from './utils/tokenService';
 
 
@@ -25,9 +27,21 @@ class App extends Component {
     super();
     this.state = {
     // Initialize user if there's a token, otherwise null
-      user: userService.getUser()
+      user: userService.getUser(),
+      exercises: []
+
     };
   }
+
+  getExerciseById = (id) => {
+    return (
+    this.state.exercises.find(e => e._id===id)
+    )
+    
+  }
+
+
+
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
   }
@@ -48,6 +62,11 @@ class App extends Component {
               handleLogout={this.handleLogout}
               {...props} />
               )}/>
+                {/* <Route exact path="/exercise/:id" render={(props) => (
+            <ShowPage
+            getExerciseById = {this.getExerciseById}
+              {...props} />
+              )}/> */}
       
       <Route path="/edit/:id" component={EditExercise} />
       <Route path="/create" component={CreateExercise} />

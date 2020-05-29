@@ -2,6 +2,7 @@ const router = require('express').Router();
 let Exercise = require('../models/exercise.model');
 const exerciseCtrl = require("../controllers/exercise")
 
+
 router.route('/').get((req, res) => {
   Exercise.find()
     .then(exercises => res.json(exercises))
@@ -56,5 +57,6 @@ router.route('/update/:id').post((req, res) => {
 });
 router.use(require("../config/auth"))
 router.post("/", exerciseCtrl.create)
+// router.get('/exercise/:id', exerciseCtrl.show);
 
 module.exports = router;
