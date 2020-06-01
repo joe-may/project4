@@ -12,12 +12,13 @@
   }
 
 .NavBar {
-    
+    padding: 14px 16px;
+    text-align: center;
     float: right;
 }
 
 .table {
     
-    background-color: greenyellow;
+    background-color: white;
 }
 
