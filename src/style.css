@@ -1,0 +1,23 @@
+/* .container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+} */
+.section {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
+
+.NavBar {
+    
+    float: right;
+}
+
+.table {
+    
+    background-color: greenyellow;
+}
+

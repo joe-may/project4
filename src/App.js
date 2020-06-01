@@ -10,6 +10,8 @@ import CreateUser from "./components/create-user.component";
 import userService from './utils/userService';
 import SignupPage from './pages/SignupPage/SignupPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import  "./style.css"
+import './App.css'
 // import ShowPage from './pages/ShowPage/ShowPage';
 
 import tokenService from './utils/tokenService';
@@ -55,6 +57,7 @@ class App extends Component {
       <div className="container">
       <Navbar user = {this.state.user} handleLogout = {this.handleLogout} />
       <br/>
+      <section>
       <Route exact path="/" render={(props) => (
             <ExercisesList
               //passing user from app to home so i can access it in NavBar!! important!!
@@ -67,7 +70,7 @@ class App extends Component {
             getExerciseById = {this.getExerciseById}
               {...props} />
               )}/> */}
-      
+      </section>
       <Route path="/edit/:id" component={EditExercise} />
       <Route path="/create" component={CreateExercise} />
       <Route path="/user" component={CreateUser} />

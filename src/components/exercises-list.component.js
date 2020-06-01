@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import 'materialize-css';
+import {Card} from "react-materialize"
+
 
 const Exercise = props => (
+  
   <tr>
     
     <td>{props.exercise.description}</td>
@@ -11,11 +15,11 @@ const Exercise = props => (
     <td>
     {props.user && props.user._id === props.exercise.user ? (
         <>
-          <Link to={"/edit/" + props.exercise._id}>edit</Link>
+          <Link to={"/edit/" + props.exercise._id}>Modify</Link>
           {" | "}
           <a
             href="#"onClick={() => {props.deleteExercise(props.exercise._id);}}>
-            delete
+            Done
           </a>
         </>
       ) : null}
@@ -75,7 +79,9 @@ export default class ExercisesList extends Component {
             { this.exerciseList() }
           </tbody>
         </table>
+
       </div>
     )
+    
   }
 }
