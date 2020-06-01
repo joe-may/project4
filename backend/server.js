@@ -25,6 +25,8 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 
 
+
+
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
 );
@@ -38,7 +40,11 @@ const usersRouter = require('./routes/users');
 
 app.use('/exercises', exercisesRouter);
 app.use('/users', usersRouter);
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
+
