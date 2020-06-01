@@ -11,7 +11,7 @@ const NavBar = (props) => {
             <Link to='' onClick={props.handleLogout}>Log out</Link>
             &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
             <span className='NavBar-welcome'>WELCOME, {props.user.name}</span>
-            <span>logged in as: {props.user.name}</span>
+            
         </div>
         :
         <div className="nav">
