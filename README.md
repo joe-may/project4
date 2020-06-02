@@ -18,6 +18,10 @@ click link : https://kata-pult.herokuapp.com/
 
 trello link: https://trello.com/b/Nn3MjhDl/katapult
 
+# Getting started
+
+User must create acount, then post and ecercise. The user has the ability to modify and "compelete" a work out.
+
 # Next Steps:
 
 - Add a a visula demonstartion of te workout
