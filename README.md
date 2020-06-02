@@ -3,27 +3,27 @@ The Klubhouse Gig Board is a place where users can post listings seeking live en
 
 The Klubhouse Gig Board’s ultimate purpose is for entertainers to then surf through the potential job opportunities and contact the poster about filling the position! 
 
-![](https://i.imgur.com/yMKSiFt.png)
+![](https://i.imgur.com/l1VeTHu.jpg)
 ![](https://i.imgur.com/hVhocrx.png)
 ![](https://i.imgur.com/oyO4lOS.png)
 
  
 
 # Technologies Used
-Node.js,Mongoose,Express,MongoDB,Google OAUTH
+React,Node,Express,MongoDb
 
 # Click Link for Deployed App
 
-click link : https://protected-ridge-93007.herokuapp.com/listings
+click link : https://kata-pult.herokuapp.com/
 
 # Click link for trello board
 
-trello link: https://trello.com/b/WvooW6Qk/klubhouse-gig-board
+trello link: https://trello.com/b/Nn3MjhDl/katapult
 
 # Next Steps:
 
-- Add a submission form to respond to posts
-- Add a premium listings that service to the top of the listings page
-- User has ablility to send quotes
-- User has ability to accept payments through site
-- User can have a profile with portfolio info on it
+- Add a a visula demonstartion of te workout
+- Add a diagram of what muscles are beimng worked on
+- User has ablility see other peoples workouts
+- User has ability to follow trainers
+
