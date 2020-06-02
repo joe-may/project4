@@ -2,7 +2,7 @@
 With social distancing in place, Katapult is an app where you can self-monitor your fitness and record your workouts. Here, you can log your workouts to keep track of your progress. Who needs a personal trainer when you can keep yourself in check? Katapult your fitness into the next level!
 
 ![](https://i.imgur.com/l1VeTHu.jpg)
-![](https://i.imgur.com/wAMmkhP.jpg)
+![](https://i.imgur.com/CLBbSFA.png)
 ![](https://i.imgur.com/xatzv5c.png)
 
  
