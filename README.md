@@ -3,7 +3,7 @@ With social distancing in place, Katapult is an app where you can self-monitor y
 
 ![](https://i.imgur.com/l1VeTHu.jpg)
 ![](https://i.imgur.com/wAMmkhP.jpg)
-![](https://i.imgur.com/Yc04naU.png)
+![](https://i.imgur.com/xatzv5c.png)
 
  
 
