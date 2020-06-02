@@ -1,7 +1,5 @@
 # Katapult
-The Klubhouse Gig Board is a place where users can post listings seeking live entertainment for events. This app has the capability of logging in, creating a listing (by filling out a form), updating, and deleting your posts. 
-
-The Klubhouse Gig Board’s ultimate purpose is for entertainers to then surf through the potential job opportunities and contact the poster about filling the position! 
+With social distancing in place, Katapult is an app where you can self-monitor your fitness and record your workouts. Here, you can log your workouts to keep track of your progress. Who needs a personal trainer when you can keep yourself in check? Katapult your fitness into the next level!
 
 ![](https://i.imgur.com/l1VeTHu.jpg)
 ![](https://i.imgur.com/wAMmkhP.jpg)
