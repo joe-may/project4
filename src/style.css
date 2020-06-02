@@ -11,6 +11,14 @@
     grid-gap: 40px;
   }
 
+
+  .navity {
+    display: flex;
+    padding: 14px 16px;
+    text-align: center;
+    justify-content: center;
+    margin: 10 10 20px;
+  }
 .NavBar {
     display: flex;
     padding: 14px 16px;
@@ -24,3 +32,10 @@
     background-color: white;
 }
 
+.nav {
+    display: flex;
+    padding: 14px 16px;
+    text-align: center;
+    justify-content: center;
+    margin: 10 0 20px;
+}
