@@ -10,7 +10,7 @@
     "bcrypt": "^4.0.1",
     "bootstrap": "^4.5.0",
     "heroku-cli": "^7.0.9",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "materialize-css": "^1.0.0-rc.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
